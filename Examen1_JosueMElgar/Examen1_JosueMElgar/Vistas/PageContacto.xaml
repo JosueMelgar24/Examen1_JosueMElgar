@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen1_JosueMElgar.Views.PageContacto">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+
+
+                <Label TextColor="White" 
+               FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+
+                            <Span Text="Codigo "  />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label >
+
+                <Entry x:Name="txtcodigo"  BackgroundColor="White" TextColor="LawnGreen"   Keyboard="Text"  />
+                
+                <Label TextColor="White" 
+               FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+           
+                    <Span Text="Nombre "  />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label >
+                <Entry x:Name="txtnombre"    BackgroundColor="White" TextColor="LawnGreen" Keyboard="Text" />
+
+                <Label TextColor="White" 
+               FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+
+                            <Span Text="Telefono " />
+
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label >
+                <Entry x:Name="txtelefono"  BackgroundColor="White" TextColor="LawnGreen" Keyboard="Telephone" />
+
+                
+
+                <Label TextColor="White" 
+               FontSize="Medium">
+                    <Label.FormattedText>
+                        <FormattedString>
+
+                            <Span Text="Edad " />
+
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label >
+                <Entry x:Name="txtedad"  BackgroundColor="White" TextColor="LawnGreen" Keyboard="Numeric" />
+
+                <Label TextColor="White" 
+               FontSize="Medium" Text="Pais">
+                </Label>
+
+                <Picker Title="Selecciones Un Pais" 
+        TitleColor="Transparent"  >
+                    <Picker.Items>
+                        <x:String>Honduras(504)</x:String>
+                        <x:String>Costa Rica</x:String>
+                        <x:String>Guatemala</x:String>
+                        <x:String>El Salvador</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Editor TextColor="White"
+                FontSize="Medium" Text="Nota"
+            x:Name="txtnota"
+                Placeholder="Escriba una nota"
+                HeightRequest="100" />
+
+                <Button x:Name="btnsalvar" Text="Salvar" Clicked="btnsalvar_Clicked" />
+                <Button x:Name="btneliminar" Text="Eliminarr" Clicked="btneliminar_Clicked" />
+                <Button x:Name="btnactualizar" Text="Actualizar" Clicked="btnactualizar_Clicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
